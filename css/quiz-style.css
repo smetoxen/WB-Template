@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS for Quiz by Flash By Night */
+
+#navContent{
+	    background-image: url("../images/background.jpg");
+		background-repeat:no-repeat;
+
+      margin:auto;
+      width:800px;
+      height:400px;
+      position:relative;
+      overflow:hidden;
+	  border:6px red double;
+      }
+#game1{
+
+      margin:auto;
+      width:800px;
+      height:400px;
+      right:0px;
+      position:absolute;
+      }
+#game2{
+      margin:auto;
+      width:800px;
+      height:400px;
+      right:-800px;
+      position:absolute;
+      }
+	  
+.questionText{
+      font-size:18px;
+      color:#333;
+	  margin: 10px auto;
+	  text-align:center;
+	  max-width:700px;
+      }
+.option{
+      width:80%;
+	  max-width:700px;
+	  
+      height:auto;
+      font-size:18px;
+      color:#FFFFFF;
+      padding:2px;
+      border:1px solid #A5C7C8;
+      cursor:pointer;
+      background-color:#5BA794;
+	  border-radius: 25px;
+	  text-align:center;
+	  padding:10px 0;
+	  margin:5px auto;
+
+      }
+.option:hover{
+      color:#A5C7C8;
+	  background-color:#2176D7;
+      }
+	  
+ #topbar{
+      height:auto;
+	  text-align:center;
+      }
+.spacer{
+      height:30px;
+      }
+.feedback1{
+      width:200px;
+      padding:5px;
+      font-size:30px;
+      color:#393;
+	   text-align:center;
+	  padding:10px 0;
+	  margin:5px auto;
+	  
+      }
+           
+.feedback2{
+      width:200px;
+      padding:5px;
+      font-size:30px;
+      color:#C00;
+	   text-align:center;
+	  padding:10px 0;
+	  margin:5px auto;
+      }
+	  
+ @media screen and (max-width:1200px) {
+	#topbar{margin-left:1%;margin-right:1%;width:96%;}
+	#navContent{margin:1%;width:98%;}	
+	#game1{margin:1%;width:98%;}
+	#game2{margin:1%;width:98%;}
+}
+
+@media screen and (max-width:460px) {
+	.option{width:80%;margin-top:5%;}
+	
+	.row{
+		margin: 0;
+	}
+		.content{
+			margin:0px;
+			padding:0px;
+			}
+			
+			.container-fluid{
+			margin:0px;
+			padding:1px;
+			}
+			
+			.col-md-8{
+				
+				padding:1px;
+				
+				}
+				
+				.option{width:98%;font-size:14px;}
+				.questionText{
+      font-size:14px;
+				}
+		
+} 
+
+/*End Quiz CSS*/
+
+    
+      
