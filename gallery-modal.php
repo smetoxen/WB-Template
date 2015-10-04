@@ -2,72 +2,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-	<?php require_once "header.php"; ?>
-    
-   
-   
-
+<?php require_once "header.php"; ?>
 </head>
 
-
 <body>
-
-   <div class = "wrapper">
-
-   <?php require_once "nav.php" ?>
-
-    	<div class="content"> 
-       
-    		<div class="container-fluid">
-    			<h1>Bootstrap Modal Slide Show</h1>
-   				<p>This slideshow uses Bootstrap to vary the number of images per row. When the user clicks on an image, it is displayed in modal mode. For desktop width, there are 4 images per row; laptop, 3 images per row; tablet, 2 images per row; smartphone, 1 image per row. All images were taken by Bob and Susan Metoxen and may be used without permission.  </p>
-    
-    			<!--The nobullets class removes the bullets from the li items.-->
-       			<ul class="row nobullets">
-                	<!--col-lg-3 sets the number of images at per row for large screens, e.g. desktops. 
+<div class = "wrapper">
+  <?php require_once "nav.php" ?>
+  <div class="content">
+    <div class="container-fluid">
+      <h1>Bootstrap Modal Slide Show</h1>
+      <p>This slideshow uses Bootstrap to vary the number of images per row. When the user clicks on an image, it is displayed in modal mode. For desktop width, there are 4 images per row; laptop, 3 images per row; tablet, 2 images per row; smartphone, 1 image per row. All images were taken by Bob and Susan Metoxen and may be used without permission. </p>
+      
+      <!--The nobullets class removes the bullets from the li items.-->
+      <ul class="row nobullets">
+        <!--col-lg-3 sets the number of images at per row for large screens, e.g. desktops. 
                     col-md-4, 3 per row, for medium screens, e.g. laptops
                     col-sm-6, 2 per row, for small devices, e.g. tablets
                     col-xs-12, 1 per row, for extra small devices, e.g. smartphones -->
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo1.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo2.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo3.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo4.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo5.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo6.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo7.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo8.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo9.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo10.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo11.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-            		<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo12.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-      		
-         		</ul> 
-                
-     		
-            <!--This is the modal view TODO missing the classes for modal and fade-->
-            
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      			<div class="modal-dialog">
-        			<div class="modal-content">         
-         				<div class="modal-body">                
-         			 	</div>
-        			</div><!-- /.modal-content -->
-      			</div><!-- /.modal-dialog -->
-    		</div><!-- /.modal -->
-       
-        
-		</div> <!-- /container -->
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo1.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo2.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo3.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo4.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo5.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo6.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo7.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo8.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo9.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo10.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo11.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo12.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+      </ul>
+      
+      <!--This is the modal view TODO missing the classes for modal and fade-->
+      
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body"> </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+    </div>
+    <!-- /container --> 
+    
+  </div>
+  <!--End Content--> 
+  
+</div>
+<!--End wrapper-->
 
-	</div><!--End Content-->
-   
-   
-</div><!--End wrapper-->
-
-      <?php 
+<?php 
 	  	require_once "footer.php";
 	  ?>
-      <script>
+<script>
         $(document).ready(function(){        
             $('li img').on('click',function(){
                 var src = $(this).attr('src');
@@ -92,8 +83,6 @@
                 $('#myModal').on('hidden.bs.modal', function(){
                     $('#myModal .modal-body').html('');
                 });
-                
-                
                 
                 
            });
@@ -138,9 +127,8 @@
         
          
         
-    </script>
-    
-    <script>
+    </script> 
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -150,6 +138,5 @@
   ga('send', 'pageview');
 
 </script>
-
-   </body>
-   </html>
+</body>
+</html>

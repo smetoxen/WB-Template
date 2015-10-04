@@ -4,33 +4,28 @@
 
 body {
 	padding-top: 50px;/*This is the padding at the top of the page for the navigation bar. TODO*/
-	font-family: 'Libre Baskerville', serif; background-color:white;/*This is the Google Font used in the template*/
- 	color:#343E48;
+	font-family: 'Libre Baskerville', serif;
+	background-color:white;/*This is the Google Font used in the template*/
+	color:#343E48;
 }
-
 /*The wrapper class wraps around the entire webpage, including the navigation bar, header image and footer. */
-.wrapper{
-	
-	
+.wrapper {
 }
-
 /*my-nav class overrides the appearance of the nav bar as set in the Bootstrap CSS*/
-.my-nav{
+.my-nav {
 	background-color:#114E93;
-	border: none;	
+	border: none;
 }
-
 /*The content class wraps around the webpage, EXCEPT for the navigation bar, header image and footer. */
-.content{
+.content {
 	margin-right:auto;
 	margin-left:auto;
 	display:block;
 	padding:20px;
 	color: #343E48 !important;
 }
-
 /*This sets the appearance of the links in the footer*/
-.footer{
+.footer {
 	color: #404144;
 	background-color:white;
 	padding-left:20px;
@@ -38,162 +33,127 @@ body {
 	padding-top:20px;
 	margin-bottom:0px;
 	padding-bottom:20px;
-	}
-
+}
 /*    *********************WEBSITE LINKS***************    */
 
 /*This is the default link appearance. TODO is this even used?*/	
 a:link {
-    color: #347372;
+	color: #347372;
 }
-
 a:visited {
-    color: #347372 ;
+	color: #347372;
 }
-
- a:hover {
-    color: #82ADB0 ;
+a:hover {
+	color: #82ADB0;
 }
-
 a:active {
-    color: #333333 ;
+	color: #333333;
 }
-
-
 /*This sets the appearance of the links in the navigation bar. The ID currentpage 
 sets the appearance of the link for the page that is currently active.*/
 .my-nav a:link {
-    color: #C2DADA;
+	color: #C2DADA;
 }
-
 .my-nav a:visited {
-    color: #C2DADA;
+	color: #C2DADA;
 }
-
 .my-nav a:hover {
-    color: #ffffff;
+	color: #ffffff;
 }
-
 .my-nav a:active {
-    color: #BBBBBB;
+	color: #BBBBBB;
 }
-
-#currentpage{
- background-color:#538FD6;
- color:white;
+#currentpage {
+	background-color:#538FD6;
+	color:white;
 }
-
 /*This sets the appearance of the links in the content.*/	
 .content a:link {
-    color: #347372 !important;
+	color: #347372 !important;
 }
-
 .content a:visited {
-    color: #347372 !important;
+	color: #347372 !important;
 }
-
 .content a:hover {
-    color: #82ADB0 !important;
+	color: #82ADB0 !important;
 }
-
 .content a:active {
-    color: #333333 !important;
+	color: #333333 !important;
 }
-
-
 /*This sets the appearance of the links in the footer*/	
 .footer a:link {
-    color: #347372 !important;
+	color: #347372 !important;
 }
-
 .footer a:visited {
-    color: #347372 !important;
+	color: #347372 !important;
 }
-
 .footer a:hover {
-    color: #82ADB0 !important;
+	color: #82ADB0 !important;
 }
-
 .footer a:active {
-    color: #333333 !important;
+	color: #333333 !important;
 }
-
 /*    **********VARIOUS CLASSES FOR SPECIAL PURPOSES**********   */
 
 /*Applies a cool style to the horizontal rules. See more cool styles 
 for your horizontal rules at TODO. Note that the class applies rules 
 for older browsers. */
 .hr-style {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
-
 /* Applies a shadow to images. See TODO to generate your own CSS shadows. Note that the class applies the rules for older browsers.*/
-.image_shadow{
+.image_shadow {
 	-webkit-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
 	margin:15px;
 }
-
 /*This class is applied to the header images. */	
-.banner-img{
+.banner-img {
 	width:100%;
 	height:auto;
-	border-bottom:1px #ddd solid;	
+	border-bottom:1px #ddd solid;
 }
-
 /*Applies a shadow, border, and rounded corner to the form. It is used on the Contact form. */
-.formstyle{
+.formstyle {
 	-webkit-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);	border: 1px solid #1e1932;
-    border-radius: 5px;
-}	
-
+	box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
+	border: 1px solid #1e1932;
+	border-radius: 5px;
+}
 /*Applies a max-width to the content on a page. It is used on pages without a lot of column or images, so it has a better width for reading. See the About page for an example.  */
-.maxwidth{
+.maxwidth {
 	max-width:800px;
 	margin:0 auto;
 	display:block;
 }
-
 /*Removes the bullets from a list.*/	
-.nobullets{
-
-    list-style-type:none;
+.nobullets {
+	list-style-type:none;
 	padding-left:0;
 }
-
-#myCanvas{
+#myCanvas {
 	margin:5px;
-	
-	}
-
-#puzzle-background{
-                background-color:silver;
-                width:650px;
-                height:490px;
-                margin:0 auto;
-                
-            }
-            
-#alt-background{
-                background-color:#46759F;
-                width:650px;
-                height:490px;
-                margin:0 auto;
-                
-                
-            }	
-<!--Used for the modal gallery-->
-	
-.boxstyle{
+}
+#puzzle-background {
+	background-color:silver;
+	width:650px;
+	height:490px;
+	margin:0 auto;
+}
+#alt-background {
+	background-color:#46759F;
+	width:650px;
+	height:490px;
+	margin:0 auto;
+}
+<!--
+Used for the modal gallery-->  .boxstyle {
 	padding:3px;
-	}
-
-      
+}

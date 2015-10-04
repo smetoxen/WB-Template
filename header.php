@@ -4,9 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--Sets the text-->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8">    
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 
 <!--Sets the title for the website. This appears in the browser tab.-->
 <meta name="title" content="White Buffalo Theme">
@@ -27,11 +26,3 @@
 <!-- Custom styles for this template -->
 <link href="css/style.css" rel="stylesheet">
 
-
-   
-   
-    
- 
-
-  
-  

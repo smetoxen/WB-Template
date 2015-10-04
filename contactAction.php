@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-	<?php require_once "header.php"; ?>
-
+<?php require_once "header.php"; ?>
 </head>
 
 <body>
-
-
-   <div class = "wrapper">
-
-  		<?php require_once "nav.php" ?>
-     
-    	<div class="content"> 
-        
-        	<h3>Thank you!</h3>
-			
-			<?php
+<div class = "wrapper">
+  <?php require_once "nav.php" ?>
+  <div class="content">
+    <h3>Thank you!</h3>
+    <?php
 				/*These are the variables in form.*/
 				$request = $_POST['describe'];
 				$name = $_POST['name'];
@@ -43,12 +35,12 @@
 				
 				echo $success ;
 			?>
+    <a href="index.php">Return to home page</a><br>
+  </div>
+  <!--End Content--> 
+  
+</div>
+<!--End Wrapper-->
 
-			<a href="index.php">Return to home page</a><br> 
-
-		</div><!--End Content-->	
-	
-    </div><!--End Wrapper-->
-	
-	<?php require_once "footer.php"; ?>
-    <?php require_once "js-files.php"; ?>
+<?php require_once "footer.php"; ?>
+<?php require_once "js-files.php"; ?>

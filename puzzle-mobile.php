@@ -1,11 +1,9 @@
 <!DOCTYPE HTML>
 
 <html>
-
-<head>
-<?php require_once "header.php"  ?>
-
-<?php 
+	<head>
+	<?php require_once "header.php"  ?>
+	<?php 
 
 if (isset($_GET['id'])){
 	$id = $_GET['id'];
@@ -41,9 +39,7 @@ $data = mysqli_query($dbc, $query);
 
 mysqli_close($dbc);
       
-?>     
-
-	
+?>
 	<script type="text/javascript">
 	
 		window.onload = onReady;
@@ -242,54 +238,32 @@ mysqli_close($dbc);
 		  return (elem.getContext && elem.getContext('2d'));
 		}
 	</script>
+	</head>
+
+	<body width="320px">
+	<?php require_once "nav.php" ?>
+	<h3 style="color:#ba4e46 !important"><b>Puzzle of the Week</b></h3>
+	<h4 style="margin-bottom:20px;text-align:center;color:#DDDDDD"><i><b><?php echo $puzzle_name ?></b></i>:<br/>
+		Photo by <?php echo $photographer ?></h4>
+	<h4 style="color:#ba4e46 !important"><?php echo $description?></h4>
+	<h4><a href="<?php echo $link ?>"> <?php echo $link_desc ?> </a></h4>
+	<p style="color:#DDDDDD;font-size:.8em;margin-bottom:0px;padding-bottom:0px"> Click two pieces to trade their places.
 	
-</head>
-
-<body width="320px">
-
-<?php require_once "nav.php" ?>
-
-
-<h3 style="color:#ba4e46 !important"><b>Puzzle of the Week</b></h3>
-
-<h4 style="margin-bottom:20px;text-align:center;color:#DDDDDD"><i><b><?php echo $puzzle_name ?></b></i>:<br/> Photo by <?php echo $photographer ?></h4>
-<h4 style="color:#ba4e46 !important"><?php echo $description?></h4>
-<h4><a href="<?php echo $link ?>"> <?php echo $link_desc ?> </a></h4>
-
-<p style="color:#DDDDDD;font-size:.8em;margin-bottom:0px;padding-bottom:0px"> Click two pieces to trade their places.  
-
-				  
-                    
 	<div class="row">
 		<div class="col-md-12">
-
 			<div style="margin:0 auto; width:320px; text-align:center;">
-				
-                
-                
 				<p id="support" style="color:#DDDDDD;"></p>
 			</div>
-	
-			<div style="margin-left:auto; margin-right:auto; max-width:320px; width:100%;height:240px; ">
-				<img id="sorry" class="img-responsive" src="sorry.jpg" style="display:none;"/>
-				<canvas id="myCanvas" width="320" height="240" onclick="onCanvasClick(event);">
-				</canvas>	
-                
-               
+			<div style="margin-left:auto; margin-right:auto; max-width:320px; width:100%;height:240px; "> <img id="sorry" class="img-responsive" src="sorry.jpg" style="display:none;"/>
+				<canvas id="myCanvas" width="320" height="240" onclick="onCanvasClick(event);"> </canvas>
 			</div>
-            
-            
-        
-        
-        
-     </div><!--End row-->
-    
-    
-</div><!--End Container-->    
-	
+		</div>
+		<!--End row--> 
+		
+	</div>
+	<!--End Container-->
+
 	<?php require_once "footer.php"; ?>
-    <?php require_once "js-files.php"; ?>
-
+	<?php require_once "js-files.php"; ?>
 </body>
-
 </html>

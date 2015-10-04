@@ -2,74 +2,25 @@
 {"quizlist":[
       
 	  {
-      "question":"How many disciples did Jesus have?",
-      "option1":"12",
-      "option2":"5",
-      "option3":"7",
-	  "option4":"40"
+      "question":"Which state is the Land of 10,000 Lakes?",
+      "option1":"Minnesota",
+      "option2":"Wisconsin",
+      "option3":"Arizona",
+	  "option4":"Kansas"
 	  },
 	 {
-      "question":"God created the world over how many days?",
-      "option1":"6",
-      "option2":"7",
-      "option3":"3",
-	  "option4":"1"
+      "question":"Which state is the largest?",
+      "option1":"Alaska",
+      "option2":"Texas",
+      "option3":"Rhode Island",
+	  "option4":"California"
 	  },
 	  {
-      "question":"How many of each unclean animal did Noah bring on the Ark?",
-      "option1":"2",
-      "option2":"7",
-      "option3":"3",
-	  "option4":"5"
-	  },
-	  {
-      "question":"How many pairs of each type of bird did Noah bring on the Ark?",
-      "option1":"7",
-      "option2":"2",
-      "option3":"5",
-	  "option4":"10"
-	  },
-	  {
-      "question":"How many smooth stones did David take along to his fight with Goliath?",
-      "option1":"5",
-      "option2":"1",
-      "option3":"3",
-	  "option4":"7"
-	  },
-	  {
-      "question":"How many gifts did the Wise Men give to the Baby Jesus?",
-      "option1":"3",
-      "option2":"2",
-      "option3":"4",
-	  "option4":"7"
-	  },
-	  {
-      "question":"In Joseph's vision in Egypt, how many fat cows and how many thin cows did he see?",
-      "option1":"7 fat and 7 thin",
-      "option2":"7 fat and 3 thin",
-      "option3":"3 fat and 3 thin",
-	  "option4":"5 fat and 4 thin"
-	  },
-	  {
-      "question":"When Pharaoh wouldn't let the Israelites leave Egypt, God sent plagues, like frogs and locusts.  How many plagues?",
-      "option1":"10",
-      "option2":"7",
-      "option3":"6",
-	  "option4":"3"
-	  },
-	  {
-      "question":"How old was the Baby Moses when his sister Miriam placed him in a basket in the River Nile?",
-      "option1":"3 months",
-      "option2":"3 years",
-      "option3":"1 month",
-	  "option4":"1 year"
-	  },
-	  {
-      "question":"After Jesus rose from the dead, he helped the disciples catch a lot of fish.  How many did they catch?",
-      "option1":"153",
-      "option2":"100",
-      "option3":"70",
-	  "option4":"12"
+      "question":"Which state is the Rocky Mountain state?",
+      "option1":"Colorado",
+      "option2":"New Hampshire",
+      "option3":"Florida",
+	  "option4":"Hawaii"
 	  }
 	  
 	  

@@ -1,12 +1,9 @@
 <!DOCTYPE HTML>
 
 <html>
-      <title>Lake Superior Agates Puzzle of the Week</title>
-
-
+<title>Lake Superior Agates Puzzle of the Week</title>
 <head>
 <?php require_once "header.php"  ?>
-
 <?php 
 
 if (isset($_GET['id'])){
@@ -45,8 +42,7 @@ $data = mysqli_query($dbc, $query);
 
   mysqli_close($dbc);
       
-?>     
-
+?>
 <script type="text/javascript">
 
 if (screen.width <= 660) {
@@ -54,9 +50,7 @@ document.location = "http://isthisanagate.com/puzzle_mobile.php";
 }
 
 </script>
-
-	
-	<script type="text/javascript">
+<script type="text/javascript">
 	
 		window.onload = onReady;
 		
@@ -279,71 +273,50 @@ document.location = "http://isthisanagate.com/puzzle_mobile.php";
 }
 
 	</script>
-	
 <head>
 
+
 <body>
-
 <div class="wrapper">
-
-<?php require_once "nav.php" ?>
-
-<div class="content">
-
-<div class="content">
-
-<div class="container-fluid" style="max-width:1200px;margin-left:auto;margin-right:auto">
-
-<h2 style="margin-bottom:20px;text-align:center"><i><b><?php echo $puzzle_name?></b></i>: Photo by <?php echo $photographer?></h2>
-<h3><?php echo $description?></h3>
-<p style="text-align:center;margin-bottom:0px"> Click two puzzle pieces to trade their places. Repeat until the puzzle is complete. For the best experience use the latest version of <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://www.opera.com/">Opera</a> or <a href="http://www.apple.com/safari/download/">Safari</a>. <br/><a href="puzzle.php?id=<?php echo $id ?>">Harder Version</a> 
-
-| <a href="mailto:?subject=Check out this fun puzzle&amp;body=Check out this fun puzzle! http://www.IsThisAnAgate.com/puzzle.php?id=<?php echo $id ?>" title="Share by Email">Share with a Friend</a>
-</p>
-           
-                  
-                    <div id="complete-message"><h3 style="height:10px;color:red;text-align:center;font-weight:bold"> </h3></div>
-
-                    
-	<div class="row">
-		<div class="col-lg-8">
-
-			<div style="margin:0 auto; width:640px; text-align:center;">
-				
-                
-                
-				<p id="support" style="color:#bb0000;"></p>
+	<?php require_once "nav.php" ?>
+	<div class="content">
+		<div class="content">
+			<div class="container-fluid" style="max-width:1200px;margin-left:auto;margin-right:auto">
+				<h2 style="margin-bottom:20px;text-align:center"><i><b><?php echo $puzzle_name?></b></i>: Photo by <?php echo $photographer?></h2>
+				<h3><?php echo $description?></h3>
+				<p style="text-align:center;margin-bottom:0px"> Click two puzzle pieces to trade their places. Repeat until the puzzle is complete. For the best experience use the latest version of <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://www.opera.com/">Opera</a> or <a href="http://www.apple.com/safari/download/">Safari</a>. <br/>
+					<a href="puzzle.php?id=<?php echo $id ?>">Harder Version</a> | <a href="mailto:?subject=Check out this fun puzzle&amp;body=Check out this fun puzzle! http://www.IsThisAnAgate.com/puzzle.php?id=<?php echo $id ?>" title="Share by Email">Share with a Friend</a> </p>
+				<div id="complete-message">
+					<h3 style="height:10px;color:red;text-align:center;font-weight:bold"> </h3>
+				</div>
+				<div class="row">
+					<div class="col-lg-8">
+						<div style="margin:0 auto; width:640px; text-align:center;">
+							<p id="support" style="color:#bb0000;"></p>
+						</div>
+						<div style="margin-left:auto; margin-right:auto; max-width:648px; width:100%;height:488px; border: 4px outset #ce392f;"> <img id="sorry" class="img-responsive" src="images/sorry.jpg" style="display:none;"/>
+							<canvas id="myCanvas" width="640" height="480" onclick="onCanvasClick(event);"> </canvas>
+						</div>
+					</div>
+					<!--End Col-->
+					
+					<div class="col-lg-4"> <img src="images/<?php echo $image_name ?>" class="img-responsive"  style="border: 4px outset #ce392f;margin-left:auto;margin-right:auto;margin-top:50px" /> <br/>
+						<br/>
+					</div>
+				</div>
 			</div>
+			<!--End row--> 
+			
+		</div>
+		<!--End Container--> 
+		
+	</div>
+	<!--End Content--> 
 	
-			<div style="margin-left:auto; margin-right:auto; max-width:648px; width:100%;height:488px; border: 4px outset #ce392f;">
-				<img id="sorry" class="img-responsive" src="images/sorry.jpg" style="display:none;"/>
-				<canvas id="myCanvas" width="640" height="480" onclick="onCanvasClick(event);">
-				</canvas>	
-            
-            </div>
-            
-        </div><!--End Col-->
-        
-        <div class="col-lg-4"> 
-        
-        
-        <img src="images/<?php echo $image_name ?>" class="img-responsive"  style="border: 4px outset #ce392f;margin-left:auto;margin-right:auto;margin-top:50px" />
-        <br/><br/>
-        
-        </div>
-        </div>
-        
-     			</div><!--End row-->
-   
-			</div><!--End Container-->    
+</div>
+<!--End Wrapper-->
 
-		</div><!--End Content-->	
-	
-    </div><!--End Wrapper-->
-	
-	<?php require_once "footer.php"; ?>
-    <?php require_once "js-files.php"; ?>
-
+<?php require_once "footer.php"; ?>
+<?php require_once "js-files.php"; ?>
 </body>
-
 </html>

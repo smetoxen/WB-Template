@@ -4,80 +4,22 @@
 	{
 	"question":"Which agate has some amethyst in it?",
 	"option1":"DVAamethyst.jpg",
-	"option2":"DVAfloater.jpg",
+	"option2":"DVAfairburn.jpg",
 	"option3":"DVAcrazylace.jpg"
 	},
 	{
 	"question":"Which agate is an eye agate?",
 	"option1":"DVAeye.jpg",
-	"option2":"DVAventifact.jpg",
-	"option3":"DVAmoss.jpg"
-	},
-	{
-	"question":"Which agate is a Fairburn from South Dakota?",
-	"option1":"DVAfairburn.jpg",
 	"option2":"DVAmosaic.jpg",
-	"option3":"DVAparalax.jpg"
-	},
-	{
-	"question":"Which agate has a floater in it?",
-	"option1":"DVAfloater.jpg",
-	"option2":"DVAventifact.jpg",
-	"option3":"DVAchrom.jpg"
-	},
-	{
-	"question":"Which agate is a moss agate?",
-	"option1":"DVAmoss.jpg",
-	"option2":"DVAspherulites.jpg",
-	"option3":"DVAfloater.jpg"
-	},
-	
-	
-	
-	{
-	"question":"Which agate is a ventifact?",
-	"option1":"DVAventifact.jpg",
-	"option2":"DVAamethyst.jpg",
-	"option3":"DVAmoss.jpg"
-	},
-	
-	{
-	"question":"Which agate has spherulites in it?",
-	"option1":"DVAspherulites.jpg",
-	"option2":"DVAmoss.jpg",
 	"option3":"DVAfairburn.jpg"
 	},
-	{
-	"question":"Which agate has chromatography in the bands?",
-	"option1":"DVAchrom.jpg",
-	"option2":"DVAeye.jpg",
-	"option3":"DVAcrazylace.jpg"
-	},
+	
 	{
 	"question":"Which agate is a Mexican Crazy Lace agate?",
 	"option1":"DVAcrazylace.jpg",
-	"option2":"DVAventifact.jpg",
-	"option3":"DVAspherulites.jpg"
-	},
-	{
-	"question":"Which agate is a Mosaic agate?",
-	"option1":"DVAmosaic.jpg",
-	"option2":"DVAeye.jpg",
-	"option3":"DVAfairburn.jpg"
-	},
-	{
-	"question":"Which agate has a parallax effect?",
-	"option1":"DVAparalax.jpg",
-	"option2":"DVApseudomorph.jpg",
-	"option3":"DVAmoss.jpg"
-	},
-	{
-	"question":"Which agate is a pseudomorph?",
-	"option1":"DVApseudomorph.jpg",
 	"option2":"DVAamethyst.jpg",
-	"option3":"DVAfloater.jpg"
+	"option3":"DVAeye.jpg"
 	}
-	
 
 ]
 }
