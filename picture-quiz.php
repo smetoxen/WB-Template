@@ -15,8 +15,12 @@
 <div class="wrapper">
 <?php require_once "nav.php"; ?>
 
-	<div id="topbar">The Agate Picture Quiz</div>
-	<hr />
+	<div id="topbar">
+		<h1>The Agate Picture Quiz</h1>
+		<p>This code is from the tutorial <a href="http://www.flashbynight.com/tutes/pixquiz/" title="Flash By Night Picture Quiz" target="_blank">Flash By Night</a></p>
+	
+	
+	</div>
 	<div class="spacer"></div>
 	<div id="navContent" >
 		<div id="game1"></div>

@@ -138,6 +138,24 @@ for older browsers. */
 	list-style-type:none;
 	padding-left:0;
 }
+
+/*These are used instead of .content for alternating background colors, like on the index.php page. */
+
+
+.background-tint{
+	padding:15px 5%;
+	background-color:#eeeeee;
+
+}
+.background-clear{
+	padding:15px 5%;
+
+}
+
+
+
+
+<!--Puzzle CSS-->
 #myCanvas {
 	margin:5px;
 }
@@ -153,7 +171,7 @@ for older browsers. */
 	height:490px;
 	margin:0 auto;
 }
-<!--
-Used for the modal gallery-->  .boxstyle {
+/*Used for the modal gallery */  
+.boxstyle {
 	padding:3px;
 }

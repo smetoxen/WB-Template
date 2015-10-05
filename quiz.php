@@ -19,8 +19,7 @@
 			<div class="row"> <br>
 				<div class="col-md-9">
 					<div id="topbar">
-						<h2 style="text-align:center">Fun Numbers Quiz<br>
-							<span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></span></h2>
+						<h1 style="text-align:center">Fun Quiz</h1>
 					</div>
 					<div class="spacer"></div>
 					<div id="navContent">

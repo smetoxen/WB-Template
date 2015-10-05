@@ -11,7 +11,7 @@
   <div class="content">
     <div class="container-fluid">
       <h1>Bootstrap Modal Slide Show</h1>
-      <p>This slideshow uses Bootstrap to vary the number of images per row. When the user clicks on an image, it is displayed in modal mode. For desktop width, there are 4 images per row; laptop, 3 images per row; tablet, 2 images per row; smartphone, 1 image per row. All images were taken by Bob and Susan Metoxen and may be used without permission. </p>
+      <p>This slideshow uses Bootstrap to vary the number of images per row. When the user clicks on an image, it is displayed in modal mode. For desktop width, there are 4 images per row; laptop, 3 images per row; tablet, 2 images per row; smartphone, 1 image per row. </p>
       
       <!--The nobullets class removes the bullets from the li items.-->
       <ul class="row nobullets">
