@@ -3,7 +3,7 @@
 <!-- The $basename variable is used below to designate which screen the user is on. You can use the css for #currentpage to designate how the current page is highlighted in the top navigation bar.  -->
 <?php $basename = substr(strtolower(basename($_SERVER['PHP_SELF'])),0,strlen(basename($_SERVER['PHP_SELF']))-4); ?>
 
-<div class="navbar navbar-inverse navbar-fixed-top my-nav" role="navigation" style="width:100%;margin-left:auto;margin-right:auto; box-shadow: 0 8px 6px -6px #969696">
+<div class="navbar navbar-inverse navbar-fixed-top my-nav" role="navigation">
 	<div class="container-fluid" style="margin-left:auto;margin-right:auto">
 		<div class="navbar-header"> 
 			

@@ -3,7 +3,7 @@
 
 
 body {
-	padding-top: 50px;/*This is the padding at the top of the page for the navigation bar. TODO*/
+	padding-top: 50px;/*This is the padding at the top of the page for the navigation bar.*/
 	font-family: 'Libre Baskerville', serif;
 	background-color:white;/*This is the Google Font used in the template*/
 	color:#343E48;
@@ -15,7 +15,39 @@ body {
 .my-nav {
 	background-color:#114E93;
 	border: none;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 0 8px 6px -6px #969696;
 }
+
+.dropdown-menu{
+	background-color:#4B85C8;
+	color: #C1D9DA;
+	
+	}
+
+.dropdown-menu>li>a:link{
+	text-align:left;
+	padding:15px;
+}
+.dropdown-menu>li>a:hover{
+	text-align:left;
+	padding:15px;
+	color:gray;
+	background-color:#4B85C8;
+
+}
+
+@media (max-width: 767px){
+.navbar-nav .open .dropdown-menu>li>a {
+	padding:15px;
+	
+	}
+	
+	}
+
+
 /*The content class wraps around the webpage, EXCEPT for the navigation bar, header image and footer. */
 .content {
 	margin-right:auto;
@@ -36,26 +68,13 @@ body {
 }
 /*    *********************WEBSITE LINKS***************    */
 
-/*This is the default link appearance. TODO is this even used?*/	
-a:link {
-	color: #347372;
-}
-a:visited {
-	color: #347372;
-}
-a:hover {
-	color: #82ADB0;
-}
-a:active {
-	color: #333333;
-}
-/*This sets the appearance of the links in the navigation bar. The ID currentpage 
-sets the appearance of the link for the page that is currently active.*/
+
+/*This sets the appearance of the links in the brand in the nav bar.*/
 .my-nav a:link {
-	color: #C2DADA;
+	color: #C1D9DA;
 }
 .my-nav a:visited {
-	color: #C2DADA;
+	color: #C1D9DA;
 }
 .my-nav a:hover {
 	color: #ffffff;
@@ -63,6 +82,21 @@ sets the appearance of the link for the page that is currently active.*/
 .my-nav a:active {
 	color: #BBBBBB;
 }
+/*This sets the appearance of the links in the navigation bar by overriding Bootstrap. The ID currentpage 
+sets the appearance of the link for the page that is currently active.*/
+.navbar-inverse .navbar-nav>li> a:link {
+	color: #C1D9DA;
+}
+.navbar-inverse .navbar-nav>li> a:visited {
+	color: #C1D9DA;
+}
+.navbar-inverse .navbar-nav>li> a:hover {
+	color: #ffffff;
+}
+.navbar-inverse .navbar-nav>li> a:active {
+	color: #BBBBBB;
+}
+
 #currentpage {
 	background-color:#538FD6;
 	color:white;
@@ -101,16 +135,16 @@ for older browsers. */
 .hr-style {
 	border: 0;
 	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	background-image:    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	background-image:     -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	background-image:      -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 /* Applies a shadow to images. See TODO to generate your own CSS shadows. Note that the class applies the rules for older browsers.*/
 .image_shadow {
-	-webkit-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
 	margin:15px;
 }
 /*This class is applied to the header images. */	
@@ -121,9 +155,9 @@ for older browsers. */
 }
 /*Applies a shadow, border, and rounded corner to the form. It is used on the Contact form. */
 .formstyle {
-	-webkit-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
 	border: 1px solid #1e1932;
 	border-radius: 5px;
 }
@@ -138,25 +172,18 @@ for older browsers. */
 	list-style-type:none;
 	padding-left:0;
 }
-
 /*These are used instead of .content for alternating background colors, like on the index.php page. */
 
 
-.background-tint{
+.background-tint {
 	padding:15px 5%;
 	background-color:#eeeeee;
-
 }
-.background-clear{
+.background-clear {
 	padding:15px 5%;
-
 }
-
-
-
-
-<!--Puzzle CSS-->
-#myCanvas {
+<!--
+Puzzle CSS--> #myCanvas {
 	margin:5px;
 }
 #puzzle-background {
