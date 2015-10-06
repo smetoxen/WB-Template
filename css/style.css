@@ -20,59 +20,38 @@ body {
 	margin-right:auto;
 	box-shadow: 0 8px 6px -6px #969696;
 }
-
-.dropdown-menu{
-		background-color:#4B85C8;
-color: #C1D9DA;
+.dropdown-menu {
+	background-color:#4B85C8;
+	color: #C1D9DA;
 }
-
-.dropdown-menu>li>a{
-	
+.dropdown-menu>li>a {
 	padding:8px;
 	text-align:left;
 	color: #C1D9DA;
-
-
-	
-	}
-
-.dropdown-menu>li>a:link{
-	
 }
-.dropdown-menu>li>a:hover{
+.dropdown-menu>li>a:link {
+}
+.dropdown-menu>li>a:hover {
 	text-align:left;
 	background-color:#4478B4;
-
 }
-
-@media (max-width: 767px){
-.dropdown-menu{
-		background-color:#4B85C8;
+ @media (max-width: 767px) {
+.dropdown-menu {
+ background-color:#4B85C8;
 color: #C1D9DA;
 }
-
-.dropdown-menu>li>a{
-	
-	padding:8px;
-	text-align:left;
-	color: #C1D9DA;
-
-
-	
-	}
-
-.dropdown-menu>li>a:link{
-	
+ .dropdown-menu>li>a {
+ padding:8px;
+ text-align:left;
+ color: #C1D9DA;
 }
-.dropdown-menu>li>a:hover{
-	text-align:left;
-	background-color:#4478B4;
-
+ .dropdown-menu>li>a:link {
 }
-	
-	}
-
-
+.dropdown-menu>li>a:hover {
+ text-align:left;
+ background-color:#4478B4;
+}
+}
 /*The content class wraps around the webpage, EXCEPT for the navigation bar, header image and footer. */
 .content {
 	margin-right:auto;
@@ -121,7 +100,6 @@ sets the appearance of the link for the page that is currently active.*/
 .navbar-inverse .navbar-nav>li> a:active {
 	color: #BBBBBB;
 }
-
 #currentpage {
 	background-color:#538FD6;
 	color:white;
