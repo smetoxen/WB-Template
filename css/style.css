@@ -22,28 +22,53 @@ body {
 }
 
 .dropdown-menu{
-	background-color:#4B85C8;
+		background-color:#4B85C8;
+color: #C1D9DA;
+}
+
+.dropdown-menu>li>a{
+	
+	padding:8px;
+	text-align:left;
 	color: #C1D9DA;
+
+
 	
 	}
 
 .dropdown-menu>li>a:link{
-	text-align:left;
-	padding:15px;
+	
 }
 .dropdown-menu>li>a:hover{
 	text-align:left;
-	padding:15px;
-	color:gray;
-	background-color:#4B85C8;
+	background-color:#4478B4;
 
 }
 
 @media (max-width: 767px){
-.navbar-nav .open .dropdown-menu>li>a {
-	padding:15px;
+.dropdown-menu{
+		background-color:#4B85C8;
+color: #C1D9DA;
+}
+
+.dropdown-menu>li>a{
+	
+	padding:8px;
+	text-align:left;
+	color: #C1D9DA;
+
+
 	
 	}
+
+.dropdown-menu>li>a:link{
+	
+}
+.dropdown-menu>li>a:hover{
+	text-align:left;
+	background-color:#4478B4;
+
+}
 	
 	}
 
