@@ -16,8 +16,15 @@
 	<div class="container-fluid background-clear">
 		<div class="row " > 
 			
-			<!--The comment class is for the main body of each page. It does not include the top navigation, banner images, or the footer. -->
-			<p>Welcome to the White Buffalo website template. The code for this website is heavily commented so you will know how to use this template with a minumum of knowledge of HTML/CSS.  See the <a href="about.php">About</a> page for instructions on how to use this template. </p>
+			<!--The comment class is for the main body of each page. It does not include the top navigation, banner images, or the footer. --><h1>White Buffalo Website Template</h1>
+			<p>Welcome to the White Buffalo website template. The code for this website is heavily commented so you will know how to use this template with a minimum knowledge of HTML/CSS. For level of expertise it targets a student who has taken the Intro to HTML/CSS class offered by Girl Develop It. It is written in PHP and heavily relies on Twitter Bootstrap. See the <a href="about.php">About</a> page for instructions on how to use this template. </p>
+			
+			<p><strong>Why use this template?</strong><br>
+			This template is a responsive website targeted to students of HTML and CSS. It will work on desktops, laptops, tablets, and smartphones. It has been heavily commented so that a student with a bit of HTML/CSS knowledge can use it. One key  benefit of using this template is that is avoids using redundant code in the header, navigation, and footer of the website with PHP. It also features a nice set of Javascript games, and two styles of Bootstrap photo galleries. The Javascript games are based on tutorials found on the World Wide Web. </p>
+			
+			<p><strong>How can I get the template?</strong> Simply fork it from <a href="https://github.com/smetoxen" target="_blank">Github</a>. </p>
+			
+			<p><strong>Have questions? </strong>Send an email to <a href="mailto:susan@whitebuffalosolutions.com">susan@whitebuffalosolutions.com</a>. </p>
 		</div>
 		<!--End row--> 
 	</div>
@@ -32,20 +39,26 @@
 			<p>This template uses the PHP function <b>require_once</b> to avoid duplication of content that goes on more than one web page. </p>
 			
 			<!--This starts a new column in the row. Bootstrap divides the columns into 12 parts. Since this div has the class col-md-4 the colum is 4/12ths of the screen. Note that columns do not need to be of each width.-->
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<h3>header.php</h3>
 				<p>This file contains the website meta data and links to the css files used throughout the website.</p>
 			</div>
 			<!--End column-->
 			
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<h3>nav.php</h3>
 				<p>This file contains the website navigation and header images. The template default includes a php script that gives you the option to have one header image on the home page and a smaller header image on all other pages. The default setting for the navigation bar keeps the nav bar static on the page with a shadow to show that the rest of the website will scroll underneath it. </p>
 			</div>
 			<!--End column-->
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<h3>footer.php</h3>
-				<p>This file contains the content of the footer as well as links to the javascript files used throughout the website. The javascript files include jQuery and Bootstrap.</p>
+				<p>This file contains the content of the footer.</p>
+			</div>
+			<!--End column--> 
+			
+			<div class="col-md-3">
+				<h3>js-files.php</h3>
+				<p>This file contains links to the javascript files used throughout the website. The javascript files include jQuery and Bootstrap. </p>
 			</div>
 			<!--End column--> 
 		</div>

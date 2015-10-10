@@ -5,7 +5,7 @@
 <?php require_once "header.php"; ?>
 <title>The Agate Picture Quiz</title>
 
-<!--The jquery is referenced twice--needs to be in the header for the quiz to work. TODO-->
+<!--The jquery is referenced in head--needs to be in the header for the quiz to work.-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script src="js/picture-quiz-controller.js"></script>

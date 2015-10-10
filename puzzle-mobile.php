@@ -3,43 +3,7 @@
 <html>
 	<head>
 	<?php require_once "header.php"  ?>
-	<?php 
-
-if (isset($_GET['id'])){
-	$id = $_GET['id'];
-	}
-
-
-//Connect to the database
- require_once "connectvars.php";
-      
-  
-//Obtain the variables 
-$query = "SELECT * FROM table_puzzles WHERE id = '$id'";
-
-
-//echo $query;
-//exit();
-$data = mysqli_query($dbc, $query);
-  
-  //Loop through the table data
-	while ($row = mysqli_fetch_array($data)){
 	
-		$puzzle_name = $row['puzzle_name'];
-		$photographer = $row['photographer'];
-		$description = $row['description'];
-		$image_name = $row['image_name'];
-		$image_mini = $row['image_mini'];
-		$submitter = $row['submitter'];
-		$email = $row['email'];
-		$link = $row['link'];
-		$link_desc = $row['link_desc'];
-	
-}
-
-mysqli_close($dbc);
-      
-?>
 	<script type="text/javascript">
 	
 		window.onload = onReady;
@@ -74,7 +38,7 @@ mysqli_close($dbc);
 			ctx = can.getContext('2d');
 			img = new Image();
 			img.onload = onImage1Load;
-			img.src = "images/<?php echo $image_mini ?>";			
+			img.src = "images/puzzle_mobile.jpg";			
 		}
 		
 		function onImage1Load()
@@ -180,7 +144,7 @@ mysqli_close($dbc);
 			
 			if(match)
 			{
-				console.log('complete');
+				 console.log('puzzle complete!');
 				$("#complete-message h3").text('Congratulations!');
 
 			}
@@ -240,28 +204,18 @@ mysqli_close($dbc);
 	</script>
 	</head>
 
-	<body width="320px">
+	<body>
 	<?php require_once "nav.php" ?>
-	<h3 style="color:#ba4e46 !important"><b>Puzzle of the Week</b></h3>
-	<h4 style="margin-bottom:20px;text-align:center;color:#DDDDDD"><i><b><?php echo $puzzle_name ?></b></i>:<br/>
-		Photo by <?php echo $photographer ?></h4>
-	<h4 style="color:#ba4e46 !important"><?php echo $description?></h4>
-	<h4><a href="<?php echo $link ?>"> <?php echo $link_desc ?> </a></h4>
-	<p style="color:#DDDDDD;font-size:.8em;margin-bottom:0px;padding-bottom:0px"> Click two pieces to trade their places.
+	<h3><b>Mobile Puzzle</b></h3>
 	
-	<div class="row">
-		<div class="col-md-12">
-			<div style="margin:0 auto; width:320px; text-align:center;">
-				<p id="support" style="color:#DDDDDD;"></p>
-			</div>
-			<div style="margin-left:auto; margin-right:auto; max-width:320px; width:100%;height:240px; "> <img id="sorry" class="img-responsive" src="sorry.jpg" style="display:none;"/>
+	<p> Click two pieces to trade their places.</p>
+	
+	<div id="complete-message"><h3></h3></div>
+			
+			<div id="puzzle-background-mobile">
 				<canvas id="myCanvas" width="320" height="240" onclick="onCanvasClick(event);"> </canvas>
 			</div>
-		</div>
-		<!--End row--> 
 		
-	</div>
-	<!--End Container-->
 
 	<?php require_once "footer.php"; ?>
 	<?php require_once "js-files.php"; ?>

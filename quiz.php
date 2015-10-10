@@ -8,7 +8,9 @@
 <!--If you have more than one quiz in your website, give each quiz a unique variable.  The name of this quiz is "fun"-->
 <script> var quiz = "fun"; </script>
 <!-- Custom styles for the multiple choice quiz -->
-<link href="css/quiz-style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="js/quiz-controller.js"></script>
+<link href="css/quiz.css"rel="stylesheet"type="text/css"/>
 </head>
 
 <body>
@@ -41,6 +43,8 @@
 <?php 
 	  	require_once "footer.php";
 	  ?>
-<script src="js/quiz-controller.js"></script>
+	  
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -49,8 +49,7 @@
 </div>
 <!--End wrapper-->
 
-<?php 
-	  	require_once "footer.php";
-	  ?>
+<?php require_once "footer.php";?>
+<?php require_once "js-files.php"; ?>
 </body>
 </html>

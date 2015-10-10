@@ -91,10 +91,10 @@ $(document).ready(function () {
 			  
 		  <!--This is where you set the message that the user receives upon quiz completion. based on their quiz score. The current socre numbers assume that there are 10 questions per quiz.-->
 		  
-		  if (score < 5){
+		  if (score < 2){
 		  scoremsg = "Study and try the test again.";
 		  
-		  }else if (score < 8){
+		  }else if (score < 3){
 					  scoremsg = "Not bad, but you can do better!";
 	  
 		  }else{

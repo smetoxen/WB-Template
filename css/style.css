@@ -185,16 +185,34 @@ for older browsers. */
 .background-clear {
 	padding:15px 5%;
 }
-<!--
-Puzzle CSS--> #myCanvas {
+<!--Puzzle CSS--> 
+
+#myCanvas {
 	margin:5px;
 }
+
 #puzzle-background {
 	background-color:silver;
 	width:650px;
 	height:490px;
 	margin:0 auto;
+	padding:5px;
 }
+
+	 
+	 #puzzle-background-mobile{
+	width:320px;
+	height:240px;
+	margin:0 auto;
+
+
+	 
+	 
+ }
+ #complete-message{
+ height:30px;color:red;text-align:center;font-weight:bold;
+ 
+ }
 #alt-background {
 	background-color:#46759F;
 	width:650px;

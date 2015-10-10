@@ -16,7 +16,7 @@ This puzzle is based on the tutorial by TODO
 	<script type="text/javascript">
 
 		if (screen.width <= 660) {
-			document.location = "http://isthisanagate.com/puzzle_mobile.php";
+			document.location = "puzzle-mobile.php";
 		}
 
 	</script>
@@ -233,14 +233,14 @@ This puzzle is based on the tutorial by TODO
 			<div class="container-fluid">
 				<h1><b>Puzzle</b></h1>
 				<h2 style="margin-bottom:20px;text-align:center"><i><b>Buffalo calves</b></i></h2>
-				<p> Click two puzzle pieces to trade their places. Repeat until the puzzle is complete. For the best experience use the latest version of <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://www.opera.com/">Opera</a> or <a href="http://www.apple.com/safari/download/">Safari</a>.</p>
-				<p><a href="puzzle_easy.php">Easier Version</a></p>
+				<p>Similar to a jigsaw puzzle, the javascript code scrambles the image. Users touch two squares to trade their places. This quiz is based on the tutorial by <a href="http://code.tutsplus.com/tutorials/create-an-html5-canvas-tile-swapping-puzzle--active-10747" target="_blank">Brad Manderscheid</a> and posted on Tuts+.For the best experience use the latest version of <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://www.opera.com/">Opera</a> or <a href="http://www.apple.com/safari/download/">Safari</a>.</p>
+				<p>There are three versions of this puzzle: this one is the harder version and is 48 pieces, the easier version has 48 pieces but is the same size, and there is a small mobile version that is 12 pieces.</p>
+				<p><a href="puzzle-easy.php">Easier Version</a></p>
 				<div id="complete-message">
-					<h3 style="height:10px;color:red;text-align:center;font-weight:bold"> </h3>
+					<h3></h3>
 				</div>
 				<div class="row">
 					<div class="col-lg-8">
-						<p id="support" style="color:#bb0000;"></p>
 						<div id="puzzle-background">
 							<canvas id="myCanvas" width="640" height="480" onclick="onCanvasClick(event);"></canvas>
 						</div>
