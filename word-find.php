@@ -1,4 +1,6 @@
 <!DOCTYPE HTML>
+<!--There are two versions of the code--this version is for screen widths greater than 660 px. 
+The code redirects to the mobile version for less than 660px. -->
 
 <html>
 <head>
@@ -33,6 +35,7 @@ document.location = "http://whitebuffalosolutions.com/WB-Template/word-find-mobi
 	<script src="wordfind/jquery.ui.touch-punch.min.js"></script>
 	<link  rel="stylesheet" type="text/css" href="wordfind/jquery.wordsearchgame.css">
 	<script>
+	/* Change the words to your words in the array below */
 		$(document).ready( function () {var words = "javascript,html,css,php,programmer,developer,code,nerd,geek,loop,"+
 						"conditional,object,jquery,bootstrap,scope,github,abstract,hexadecimal,binary";
 			

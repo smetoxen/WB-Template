@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--Put head content you want in the entire website in the header.php file. -->
+<!--The head content is in the header.php file. The php function require_once pulls in the code from header.php.-->
 
 <?php require_once "header.php"; ?>
 </head>
@@ -38,7 +38,7 @@
 			<h2 class="text-center"><strong>WEBSITE ORGANIZATION</strong></h2>
 			<p>This template uses the PHP function <b>require_once</b> to avoid duplication of content that goes on more than one web page. </p>
 			
-			<!--This starts a new column in the row. Bootstrap divides the columns into 12 parts. Since this div has the class col-md-4 the colum is 4/12ths of the screen. Note that columns do not need to be of each width.-->
+			<!--This starts a new column in the row. Bootstrap divides the columns into 12 parts. Since this div has the class col-md-3 the colum is 3/12ths of the screen. Note that columns do not need to be of each width.-->
 			<div class="col-md-3">
 				<h3>header.php</h3>
 				<p>This file contains the website meta data and links to the css files used throughout the website.</p>
@@ -141,7 +141,7 @@
 </div>
 <!--End Wrapper-->
 
-<?php require_once "footer.php"; ?>
-<?php require_once "js-files.php"; ?>
+<?php require_once "footer.php"; ?><!--This is the website footer -->
+<?php require_once "js-files.php"; ?><!--This is the Javascript references -->
 </body>
 </html>

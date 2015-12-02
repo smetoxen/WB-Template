@@ -1,13 +1,13 @@
 <!--This is the top navigation for the website and the header images for the template.-->
 
-<!-- The $basename variable is used below to designate which screen the user is on. You can use the css for #currentpage to designate how the current page is highlighted in the top navigation bar.  -->
+<!-- The $basename variable is used below to designate which screen the user is on. The current screen is highlighted for the user in the navigation bar. You can use the css for #currentpage to designate how the current page is highlighted in the top navigation bar.  -->
 <?php $basename = substr(strtolower(basename($_SERVER['PHP_SELF'])),0,strlen(basename($_SERVER['PHP_SELF']))-4); ?>
 
 <div class="navbar navbar-inverse navbar-fixed-top my-nav" role="navigation">
-	<div class="container-fluid" style="margin-left:auto;margin-right:auto">
+	<div class="container-fluid">
 		<div class="navbar-header"> 
 			
-			<!--This is the "hamburger" menu that appears on the left when their isn't room to display the nav bar.-->
+			<!--This is the "hamburger" menu that appears on the left when there isn't enough width (767px) to display the nav bar.-->
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 			
 			<!--This is the name that will appear in the upper left navigation. --> 
@@ -34,16 +34,18 @@
 				?>
             >About</a></li>
 				
-				<!--About Screen link-->
+				<!--Contact Screen link-->
 				<li><a href="contact.php" 
             <?php if ($basename=="contact")
 				echo " id=\"currentpage\"";
 				?>
             >Contact</a></li>
+            
+            <!--Dropdown menu for Galleries -->
 				<li class="dropdown navbar-right"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galleries<span class="caret"></span> &nbsp;</a>
 					<ul class="dropdown-menu" role="menu" aria-expanded="false">
-						<li style="text-align:right"><a href="gallery-slider.php">Bootstrap Slider</a></li>
-						<li style="text-align:right"><a href="gallery-modal.php">Bootstrap Modal</a></li>
+						<li><a href="gallery-slider.php">Bootstrap Slider</a></li>
+						<li><a href="gallery-modal.php">Bootstrap Modal</a></li>
 					</ul>
 				</li>
 				
@@ -51,10 +53,10 @@
 				
 				<li class="dropdown navbar-right"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<span class="caret"></span> &nbsp;</a>
 					<ul class="dropdown-menu" role="menu" aria-expanded="false">
-						<li style="text-align:right"><a href="quiz.php">Quiz</a></li>
-						<li style="text-align:right"><a href="picture-quiz.php">Picture Quiz</a></li>
-						<li style="text-align:right"><a href="puzzle.php">Puzzle</a></li>
-						<li style="text-align:right"><a href="word-find.php">Word Find </a></li>
+						<li><a href="quiz.php">Quiz</a></li>
+						<li><a href="picture-quiz.php">Picture Quiz</a></li>
+						<li><a href="puzzle.php">Puzzle</a></li>
+						<li><a href="word-find.php">Word Find </a></li>
 					</ul>
 				</li>
 			</ul>
@@ -75,5 +77,5 @@
 		  /*Set the banner for the other pages here.*/
           echo ' <img src="images/header-small.png"  class="banner-img" /> ';
           
-          }
+         }
   ?>

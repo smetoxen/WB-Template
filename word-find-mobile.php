@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<!--There are two versions of the code--this version is for screen widths less than 660 px.-->
 
 <html>
 <head>
@@ -25,6 +26,9 @@
 <script src="wordfind/jquery.ui.touch-punch.min.js"></script>
 <link  rel="stylesheet" type="text/css" href="wordfind/jquery.wordsearchgame.css">
 <script>
+
+			/* Change these words to your words in the array below */
+
 		$(document).ready( function () {var words = "html,css,php,code,nerd,geek,loop";
 			
 			//attach the game to a div

@@ -15,25 +15,26 @@
       
       <!--The nobullets class removes the bullets from the li items.-->
       <ul class="row nobullets">
-        <!--col-lg-3 sets the number of images at per row for large screens, e.g. desktops. 
+        <!--col-lg-3 sets the number of images at 4 per row for large screens, e.g. desktops. 
                     col-md-4, 3 per row, for medium screens, e.g. laptops
                     col-sm-6, 2 per row, for small devices, e.g. tablets
-                    col-xs-12, 1 per row, for extra small devices, e.g. smartphones -->
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo1.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo2.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo3.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo4.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo5.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo6.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo7.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo8.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo9.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo10.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo11.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
-        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo12.jpg" width="100%" height="auto" class="img-responsive boxstyle" /></li>
+                    col-xs-12, 1 per row, for extra small devices, e.g. smartphones
+            Replace these images with your images. The slideshow works best when the images are all the same size.  -->
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo1.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo2.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo3.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo4.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo5.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo6.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo7.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo8.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo9.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo10.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo11.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "><img src="images/photo12.jpg" width="640px" height="480px" class="img-responsive boxstyle" /></li>
       </ul>
       
-      <!--This is the modal view TODO missing the classes for modal and fade-->
+      <!--This is the modal view that appears when the user selects an image-->
       
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -57,6 +58,8 @@
 
 <?php require_once "footer.php"; ?>
 <?php require_once "js-files.php"; ?>
+
+<!--This is the script used for the modal view of the slide show -->
 <script>
         $(document).ready(function(){        
             $('li img').on('click',function(){

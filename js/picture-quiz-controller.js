@@ -8,53 +8,55 @@ $(document).ready(function () {
 	var numberOfQuestions;
 	var score=0;
 
+<!-- This sets the JSON file for the quiz -->
 	$.getJSON('picture-quiz.json', function(data) {
 
-	for(i=0;i<data.quizlist.length;i++){ 
-		questionBank[i]=new Array;
-		questionBank[i][0]=data.quizlist[i].question;
-		questionBank[i][1]=data.quizlist[i].option1;
-		questionBank[i][2]=data.quizlist[i].option2;
-		questionBank[i][3]=data.quizlist[i].option3;
-	}
-	numberOfQuestions=questionBank.length; 
-	  
-	displayQuestion();
-})//gtjson
+		for(i=0;i<data.quizlist.length;i++){ 
+			questionBank[i]=new Array;
+			questionBank[i][0]=data.quizlist[i].question;
+			questionBank[i][1]=data.quizlist[i].option1;
+			questionBank[i][2]=data.quizlist[i].option2;
+			questionBank[i][3]=data.quizlist[i].option3;
+			<!-- if you have more than three quiz options, add a fourth here -->
+		}
+		numberOfQuestions=questionBank.length; 
+		  
+		displayQuestion();
+	})
 
 
-function displayQuestion(){
- 	var rnd=Math.random()*3;
-	rnd=Math.ceil(rnd);
- 	var q1;
- 	var q2;
- 	var q3;
-
-	if(rnd==1){q1=questionBank[questionNumber][1];q2=questionBank[questionNumber][2];q3=questionBank[questionNumber][3];}
-	if(rnd==2){q2=questionBank[questionNumber][1];q3=questionBank[questionNumber][2];q1=questionBank[questionNumber][3];}
-	if(rnd==3){q3=questionBank[questionNumber][1];q1=questionBank[questionNumber][2];q2=questionBank[questionNumber][3];}
-
- 
-  	$(stage).append('<div  class="questionText"> '+questionBank[questionNumber][0]+'</div><br/><table style="margin-right:10px;margin-left:10px"><tr><td style="margin-right:auto;margin-left:auto"><div id="1" class="pix "><img src="images/picture-quiz/'+q1+'"></div></td><td style="margin-right:auto;margin-left:auto"><div id="2" class="pix "><img src="images/picture-quiz/'+q2+'"></div></td><td style="margin-right:auto;margin-left:auto"><div id="3" class="pix "><img src="images/picture-quiz/'+q3+'"></div></td></tr></table>');
- 
-
- 	$('.pix').click(function(){
-  		if(questionLock==false){questionLock=true;	
-  		//correct answer
-  		if(this.id==rnd){
-   			$(stage).append('<div class="feedback1">CORRECT</div>');
-   			score++;
-   		}
-  
-  		//wrong answer	
-  		if(this.id!=rnd){
-  			 $(stage).append('<div class="feedback2">INCORRECT</div>');
- 		 }
-  		setTimeout(function(){changeQuestion()},1000);
-	 }})
-}//display question
-
+	function displayQuestion(){
+		var rnd=Math.random()*3;
+		rnd=Math.ceil(rnd);
+		var q1;
+		var q2;
+		var q3;
 	
+		if(rnd==1){q1=questionBank[questionNumber][1];q2=questionBank[questionNumber][2];q3=questionBank[questionNumber][3];}
+		if(rnd==2){q2=questionBank[questionNumber][1];q3=questionBank[questionNumber][2];q1=questionBank[questionNumber][3];}
+		if(rnd==3){q3=questionBank[questionNumber][1];q1=questionBank[questionNumber][2];q2=questionBank[questionNumber][3];}
+	
+	 
+		$(stage).append('<div  class="questionText"> '+questionBank[questionNumber][0]+'</div><br/><table><tr><td><div id="1" class="pix "><img src="images/picture-quiz/'+q1+'"></div></td><td ><div id="2" class="pix "><img src="images/picture-quiz/'+q2+'"></div></td><td><div id="3" class="pix "><img src="images/picture-quiz/'+q3+'"></div></td></tr></table>');
+	 
+	
+		$('.pix').click(function(){
+			if(questionLock==false){questionLock=true;	
+			//correct answer
+			if(this.id==rnd){
+				$(stage).append('<div class="feedback1">CORRECT</div>');
+				score++;
+			}
+	  
+			//wrong answer	
+			if(this.id!=rnd){
+				 $(stage).append('<div class="feedback2">INCORRECT</div>');
+			 }
+			setTimeout(function(){changeQuestion()},1000);
+		 }})
+	}//display question
+	
+		
 	function changeQuestion(){
 		
 		questionNumber++;
@@ -72,17 +74,18 @@ function displayQuestion(){
 	<!--Change the "score ==" values to fit the number of questions in your quiz-->
 	function displayFinalSlide(){
 		
+		
 		 if (score == 1){
 		  scoremsg = "Study and try the test again.";
 		  
 		  }else if (score == 2){
-					  scoremsg = "Pretty good!!";
+					  scoremsg = "Pretty good!";
 	  
 		  }else{
 			  scoremsg = "You are a pro! Great work!";
 	  
-			  }
-		  $(stage).append('<div class="questionText">You have finished the quiz!<br><br><h4>You had '+score+' answers correct out of '+numberOfQuestions+' . <br>'+scoremsg+'<br></h4><br><br><a href="javascript:history.go(0)"><b>Try Again!</b></a></div>');
+		  }
+		  $(stage).append('<div class="questionText">You have finished the quiz!<br><br><h4>You had '+score+' answers correct out of '+numberOfQuestions+'. <br>'+scoremsg+'<br></h4><br><br><a href="javascript:history.go(0)"><b>Try Again!</b></a></div>');
 		
 	}//display final slide
 	

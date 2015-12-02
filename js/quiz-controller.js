@@ -1,4 +1,4 @@
-<!--Most of this code was written by Flash by Night. See the Flash by Night tutorial for explanation of this code. -->
+/* Most of this code was written by Flash by Night. See the Flash by Night tutorial for explanation of this code. */
 
 $(document).ready(function () {
 	
@@ -10,10 +10,12 @@ $(document).ready(function () {
   	var numberOfQuestions;
   	var score=0;
   	var quizjson="quiz.json";
-		 
-	<!--This optional block of code allows you to have more than one quiz in your website. If you have more than three quizzes, add more "else if" statements. The "quizjson" variable sets the name of the json file where you keep your quiz content. -->
+	/*	 
+	This optional block of code allows you to have more than one quiz in your website.
+	 If you have more than three quizzes, add more "else if" statements. The "quizjson" variable 
+	 sets the name of the json file where you keep your quiz content. 
 	
-	/*
+	
 	
 	if(quiz == "numbers"){
 		quizjson = 'quiz-numbers.json';
@@ -89,7 +91,8 @@ $(document).ready(function () {
 		  
 	  function displayFinalSlide(){
 			  
-		  <!--This is where you set the message that the user receives upon quiz completion. based on their quiz score. The current socre numbers assume that there are 10 questions per quiz.-->
+		  <!--This is where you set the message that the user receives upon quiz completion
+		   based on their quiz score. The current socre numbers assume that there are 3 questions per quiz.-->
 		  
 		  if (score < 2){
 		  scoremsg = "Study and try the test again.";

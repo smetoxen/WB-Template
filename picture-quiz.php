@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Lake Superior Agates Quiz</title>
 <?php require_once "header.php"; ?>
-<title>The Agate Picture Quiz</title>
 
-<!--The jquery is referenced in head--needs to be in the header for the quiz to work.-->
+<!--
+See the picture-quiz.json file to change the quiz questions and images to your own. JSON is very easy to learn. 
+It is not a programming language. It is a way to format data objects.
+
+The javascript that runs this quiz is in js/picture-quiz-controller.js. In the javascript file you will find the
+code to set your custom quiz feedback.
+
+The jquery is referenced in head--needs to be in the head for the quiz to work. 
+Note that the jsfiles.php is not included at the end of the body. 
+
+-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script src="js/picture-quiz-controller.js"></script>
-<link href="css/picture-quiz.css"rel="stylesheet"type="text/css"/>
+<link href="css/picture-quiz.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper picture-quiz-wrapper">
 <?php require_once "nav.php"; ?>
 
 	<div id="topbar">
-		<h1>The Agate Picture Quiz</h1>
-		<p>This code is from the tutorial <a href="http://www.flashbynight.com/tutes/pixquiz/" title="Flash By Night Picture Quiz" target="_blank">Flash By Night</a></p>
+		<h1>Picture Quiz</h1>
+		<p>This code is from the tutorial by <a href="http://www.flashbynight.com/tutes/pixquiz/" title="Flash By Night Picture Quiz" target="_blank">Flash&nbsp;By&nbsp;Night</a></p>
 	
 	
 	</div>

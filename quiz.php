@@ -5,7 +5,18 @@
 <head>
 <?php require_once "header.php"; ?>
 
-<!--If you have more than one quiz in your website, give each quiz a unique variable.  The name of this quiz is "fun"-->
+<!--If you have more than one quiz in your website, give each quiz a unique variable.  
+The name of this quiz is "fun"
+
+See the quiz.json file to change the quiz questions to your own. JSON is very easy to learn. 
+It is not a programming language. It is a way to format data objects.
+
+The javascript that runs this quiz is in js/quiz-controller.js. In the javascript file you will find the
+code to set your custom quiz feedback.
+
+The jquery is referenced in head--needs to be in the head for the quiz to work. 
+Note that the jsfiles.php is not included at the end of the body. 
+-->
 <script> var quiz = "fun"; </script>
 <!-- Custom styles for the multiple choice quiz -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 

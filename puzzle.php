@@ -1,8 +1,13 @@
-<!--There are three versions of this puzzle. This is the default version in the template.
+<!--
+		There are three versions of this puzzle. This is the default version in the template.
 		puzzle.php uses an image that is 640 x 480 pixels and has 48 pieces
     	puzzle_easy.php uses an image that is 640 x 480 and has 12 pieces.
     	puzzle_mobile.php is the version of the puzzle for smartphones. 
-This puzzle is based on the tutorial by TODO
+		
+		This quiz is based on the tutorial at 
+		http://code.tutsplus.com/tutorials/create-an-html5-canvas-tile-swapping-puzzle--active-10747 
+		by Brad Manderscheid and posted on Tuts+
+		
 -->
 
 <!DOCTYPE HTML>

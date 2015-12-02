@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php require_once "header.php"; ?>
+<?php require_once "header.php"; ?><!--This is the head content -->
 </head>
 
 <body>
@@ -16,11 +16,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8 formstyle">
+        <div class="col-md-8 formstyle"> <!--"col-md-8" sets up a column that is 8/12's of the screen width. "formstyle" adds some css to the form -->
           <h3>Contact Us</h3>
-          <div  style="width:100%;">
-            <form role="form" method = "post" action="contactAction.php">
-              <div class="form-group">
+          <div>
+            <form role="form" method = "post" action="contactAction.php"><!-- "contactAction.php" is the form action and holds the scripts that run when the form is submitted.-->
+              <div class="form-group"> <!--"form-group" adds Bootstrap styling. -->
                 <label for = "describe">Description:</label>
                 <textarea class="form-control"  id = "describe" name = "describe" rows="3"></textarea>
               </div>

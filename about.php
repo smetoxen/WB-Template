@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<?php require_once "header.php"; ?>
+		<?php require_once "header.php"; ?> <!--the head content is in this file-->
 	</head>
 	<body>
-		<div class = "wrapper">
-			<?php require_once "nav.php" ?>
-			<div class="content">
-				<div class="container-fluid">
-					<div class="row maxwidth">
-						<div class="col-md-12">
+		<div class = "wrapper"><!--This wraps around the entire webpage and can be used for settings you want to apply to the entire page -->
+			<?php require_once "nav.php" ?><!--This is the navigation bar and header image-->
+			<div class="content"> <!-- This is the main content and includes everything except the navigation, header image and footer.-->
+				<div class="container-fluid"><!-- This class wraps your Bootstrap content -->
+					<div class="row maxwidth"> <-- "row starts a new row in Bootstrap. "maxwidth" sets max width for the content. -->
+						<div class="col-md-12"><!-- This is Bootstrap column 12/12th's wide -->
 							<h1>About the Template</h1>
 							<p >My name is Susan Metoxen and I am the owner of White Buffalo. White Buffalo creates responsive websites and iOS and Android apps. I created this template because I needed to add PHP features to the Twitter Bootstrap template. Along the way I have gathered a nice set of features that will be useful or fun for your website, like a PHP-based Contact form and some Javascript games. </p>
 							<p>This website uses HTML, CSS, PHP and Javascript. It relies heavily on Twitter Bootstrap for formatting and layout. This template is heavily documented so that users with a minimal knowledge of HTML/CSS will be able to use this template as a starting point. Even so, it would be helpful to review the <a href="#" target="_blank">W3 Schools Twitter Bootstrap</a> tutorial.</p>
@@ -33,7 +33,7 @@
 			<!--End Content-->	
 		</div>
 		<!--End Wrapper-->
-		<?php require_once "footer.php"; ?>
-		<?php require_once "js-files.php"; ?>
+		<?php require_once "footer.php"; ?><!-- This is the website footer.--> 
+		<?php require_once "js-files.php"; ?><!--This is the file that holds the Javascript scripts that are inserted at the end of the body. -->
 	</body>
 </html>
