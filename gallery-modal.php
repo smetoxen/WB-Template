@@ -8,7 +8,7 @@
 <body>
 <div class = "wrapper">
   <?php require_once "nav.php" ?>
-  <div class="content">
+  <main class="content">
     <div class="container-fluid">
       <h1>Bootstrap Modal Slide Show</h1>
       <p>This slideshow uses Bootstrap to vary the number of images per row. When the user clicks on an image, it is displayed in modal mode. For desktop width, there are 4 images per row; laptop, 3 images per row; tablet, 2 images per row; smartphone, 1 image per row. </p>
@@ -50,7 +50,7 @@
     </div>
     <!-- /container --> 
     
-  </div>
+  </main>
   <!--End Content--> 
   
 </div>

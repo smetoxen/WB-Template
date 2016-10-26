@@ -216,7 +216,7 @@
 	</script>
 	</head>
 
-	<body>
+<body>
 	<?php require_once "nav.php" ?>
 	<h3><b>Mobile Puzzle</b></h3>
 	

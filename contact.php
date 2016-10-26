@@ -8,7 +8,7 @@
 <body>
 <div class = "wrapper">
   <?php require_once "nav.php" ?>
-  <div class="content">
+  <main class="content">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -58,7 +58,7 @@
     </div>
     <!--End Container--> 
     
-  </div>
+  </main>
   <!--End Content--> 
   
 </div>

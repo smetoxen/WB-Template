@@ -234,7 +234,7 @@
 	<body>
 	<div class="wrapper">
 		<?php require_once "nav.php" ?>
-		<div class="content">
+		<main class="content">
 			<div class="container-fluid">
 				<h1><b>Puzzle</b></h1>
 				<h2 style="margin-bottom:20px;text-align:center"><i><b>Buffalo calves</b></i></h2>
@@ -259,7 +259,7 @@
 			</div>
 			<!--End Container--> 
 			
-		</div>
+		</main>
 		<!--End Content-->
 		
 		<?php require_once "footer.php"; ?>

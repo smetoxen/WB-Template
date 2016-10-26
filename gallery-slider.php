@@ -8,7 +8,7 @@
 <body>
 <div class = "wrapper">
 	<?php require_once "nav.php" ?>
-	<div class="content">
+	<main class="content">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -28,17 +28,16 @@
 						</div>
 						<!--end carousol inner--> 
 						
-						<a class="left carousel-control" style="background-color:none !important;" href="#myCarousel-1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel-1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
+						<a class="left carousel-control" style="background-color:none !important;" href="#myCarousel-1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel-1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 					<!-- /.carousel --> 
-					
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	<!-- /container --> 
 	
-</div>
-<!--End Content-->
+	</main>
+	<!--End Content-->
 
 </div>
 <!--End wrapper-->
