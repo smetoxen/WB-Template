@@ -259,10 +259,10 @@ document.location = "http://isthisanagate.com/puzzle_mobile.php";
 <body>
 <div class="wrapper">
 		<?php require_once "nav.php" ?>
-		<div class="content">
+		<main class="content">
 			<div class="container-fluid">
 				<h1><b>Puzzle</b></h1>
-				<h2 style="margin-bottom:20px;text-align:center"><i><b>Buffalo calves</b></i></h2>
+				<h2 style="margin-bottom:20px;text-align:center"><em><b>Buffalo calves</b></em></h2>
 				<p>Similar to a jigsaw puzzle, the javascript code scrambles the image. Users touch two squares to trade their places. This quiz is based on the tutorial by <a href="http://code.tutsplus.com/tutorials/create-an-html5-canvas-tile-swapping-puzzle--active-10747" target="_blank">Brad Manderscheid</a> and posted on Tuts+. For the best experience use the latest version of <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://www.opera.com/">Opera</a> or <a href="http://www.apple.com/safari/download/">Safari</a>.</p>
 				<p><a href="puzzle.php">Harder Version</a></p>
 				<div id="complete-message">
@@ -283,7 +283,7 @@ document.location = "http://isthisanagate.com/puzzle_mobile.php";
 			</div>
 			<!--End Container--> 
 			
-		</div>
+		</main>
 		<!--End Content-->
 		
 	

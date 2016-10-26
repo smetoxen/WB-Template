@@ -27,7 +27,7 @@ Note that the jsfiles.php is not included at the end of the body.
 <body>
 <div class = "wrapper">
 	<?php require_once "nav.php" ?>
-	<div class="content">
+	<main class="content">
 		<div class="container-fluid">
 			<div class="row"> <br>
 				<div class="col-md-9">
@@ -45,7 +45,7 @@ Note that the jsfiles.php is not included at the end of the body.
 		</div>
 		<!-- /container --> 
 		
-	</div>
+	</main>
 	<!--End Content--> 
 	
 </div>

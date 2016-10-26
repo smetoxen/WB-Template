@@ -7,7 +7,7 @@
 <body>
 <div class = "wrapper">
   <?php require_once "nav.php" ?>
-  <div class="content">
+  <main class="content">
     <h3>Thank you!</h3>
     <?php
 				/*These are the variables in form. In PHP, all variables start with a $ sign. 
@@ -37,7 +37,7 @@
 				echo $success ;
 			?>
     <a href="index.php">Return to home page</a><br>
-  </div>
+  </main>
   <!--End Content--> 
   
 </div>
